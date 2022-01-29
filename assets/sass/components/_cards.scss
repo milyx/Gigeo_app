@@ -1,0 +1,51 @@
+/*
+    font-family: $raleway;
+    font-weight: $raleway-bold;
+    font-size: $xx-large;
+    text-align: center;
+    padding: 20px 0;*/
+
+
+.section-card {
+   
+
+  &__content {
+    height: 280px;
+    margin-bottom: 30px;
+     
+
+
+    &--body {
+
+
+    }
+    &--img {
+
+
+    }
+    &--parragraph {
+        font-family: $raleway;
+        font-weight: $raleway-regular;
+        font-size: $large;
+
+
+    }
+    &--title {
+        font-family: $raleway;
+        font-weight: $raleway-bold;
+        font-size: $x-large;
+
+
+
+    }
+  }
+}
+
+h1{
+    font-family: $raleway;
+    font-weight: $raleway-bold;
+    font-size: $xx-large;
+    padding-bottom: 30px;
+
+
+}

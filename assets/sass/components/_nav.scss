@@ -1,0 +1,20 @@
+.navigation {
+    &__logo {
+      width: 130px;
+      padding: 10px;
+
+    }
+}
+.navigation-items {
+  justify-content: flex-end;
+  padding-right: 40px;
+
+
+  &__list {
+    
+
+
+    &--items {
+    }
+  }
+}

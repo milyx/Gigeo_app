@@ -1,0 +1,47 @@
+.header {
+  &__banner {
+    background: url(../img/image-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    
+  }
+  &__profile--button {
+    display: none;
+    width: 60px;
+  }
+  &__profile {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-bottom: 1px solid $quick-silver;
+    margin-bottom: 70px;
+
+    &--img {
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      width: 120px;
+      height: 120px;
+      padding: 20px;
+    }
+
+    &--title {
+      padding-top: 30px;
+      font-family: $raleway;
+      font-weight: $raleway-bold;
+      font-size: $xx-large;
+    }
+
+  
+    &--span {
+      font-family: $raleway;
+      font-weight: $raleway-regular;
+      font-size: $large;
+      color: $quick-silver;
+    }
+  }
+}
