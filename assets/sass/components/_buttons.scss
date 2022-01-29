@@ -1,0 +1,37 @@
+.header {
+    display: inline;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  &__button--1 {
+    display: none;
+    width: 60px;
+    @include desktop-view {
+      display: block;
+      margin-top: 20px;
+      width: 90px;
+      height: 30px;
+      background: $turquoise;
+      color: $white;
+      font-family: $raleway;
+    }
+  }
+  &__button--2 {
+    display: none;
+    width: 60px;
+    @include desktop-view {
+      display: block;
+      margin-top: 20px;
+      width: 90px;
+      height: 30px;
+      background: $transparent;
+      color: $white;
+      font-family: $raleway;
+      margin-left: 10px;
+    }
+  }
+}

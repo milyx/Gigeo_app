@@ -11,8 +11,8 @@
 }        
           
 
-@mixin laptop-view{
-    @media (min-width: #{$min-laptop}) {
+@mixin desktop-view{
+    @media (min-width: #{$min-desktop}) {
         @content;
     }
 }

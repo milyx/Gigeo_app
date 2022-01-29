@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
-    
+    width: 100%;
   }
   &__profile--button {
     display: none;
@@ -13,11 +13,13 @@
   }
   &__profile {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 12px;
-    border-bottom: 1px solid $quick-silver;
-    margin-bottom: 70px;
 
+    @include desktop-view {
+      justify-content: space-between;
+      margin: 0 110px;
+    }
     &--img {
       border-radius: 100%;
       -webkit-border-radius: 100%;
@@ -28,7 +30,6 @@
       height: 120px;
       padding: 20px;
     }
-
     &--title {
       padding-top: 30px;
       font-family: $raleway;
@@ -36,12 +37,20 @@
       font-size: $xx-large;
     }
 
-  
     &--span {
       font-family: $raleway;
       font-weight: $raleway-regular;
       font-size: $large;
       color: $quick-silver;
     }
+  }
+}
+
+#profile {
+  display: flex;
+  @include desktop-view {
+    justify-content: space-between;
+    padding-right: 130px;
+    border-bottom: 1px solid $quick-silver;
   }
 }

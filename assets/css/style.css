@@ -6,24 +6,77 @@ body * {
   vertical-align: baseline;
 }
 
+.header {
+  display: inline;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+}
+.header__button--1 {
+  display: none;
+  width: 60px;
+}
+@media (min-width: 1024px) {
+  .header__button--1 {
+    display: block;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    background: #0dd9e0;
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+  }
+}
+.header__button--2 {
+  display: none;
+  width: 60px;
+}
+@media (min-width: 1024px) {
+  .header__button--2 {
+    display: block;
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    background: rgba(228, 38, 38, 0.75);
+    color: #FFF;
+    font-family: "Raleway", sans-serif;
+    margin-left: 10px;
+  }
+}
+
 .navigation__logo {
-  width: 130px;
+  width: 150px;
   padding: 10px;
+}
+@media (min-width: 1024px) {
+  .navigation__logo {
+    padding-left: 150px;
+    width: 250px;
+  }
 }
 
 .navigation-items {
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 80px;
+  color: #39383a;
 }
-/*
-    font-family: $raleway;
-    font-weight: $raleway-bold;
-    font-size: $xx-large;
-    text-align: center;
-    padding: 20px 0;*/
+@media (min-width: 1024px) {
+  .navigation-items {
+    margin-right: 20px;
+    width: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-card {
+    padding: 5px;
+    align-items: center;
+  }
+}
 .section-card__content {
   height: 280px;
-  margin-bottom: 30px;
+  margin: 0 25px 30px 25px;
+  padding-bottom: 20px;
 }
 .section-card__content--parragraph {
   font-family: "Raleway", sans-serif;
@@ -36,11 +89,12 @@ body * {
   font-size: 20px;
 }
 
-h1 {
+h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
+  margin-left: 30px;
 }
 
 .header__banner {
@@ -49,6 +103,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   height: 150px;
+  width: 100%;
 }
 .header__profile--button {
   display: none;
@@ -56,10 +111,14 @@ h1 {
 }
 .header__profile {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 12px;
-  border-bottom: 1px solid #9b9b9b;
-  margin-bottom: 70px;
+}
+@media (min-width: 1024px) {
+  .header__profile {
+    justify-content: space-between;
+    margin: 0 110px;
+  }
 }
 .header__profile--img {
   border-radius: 100%;
@@ -82,6 +141,17 @@ h1 {
   font-weight: 400;
   font-size: 18px;
   color: #9b9b9b;
+}
+
+#profile {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  #profile {
+    justify-content: space-between;
+    padding-right: 130px;
+    border-bottom: 1px solid #9b9b9b;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

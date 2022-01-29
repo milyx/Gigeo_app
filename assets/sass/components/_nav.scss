@@ -1,19 +1,24 @@
 .navigation {
-    &__logo {
-      width: 130px;
-      padding: 10px;
+  &__logo {
+    width: 150px;
+    padding: 10px;
 
+    @include desktop-view {
+      padding-left: 150px;
+      width: 250px;
     }
+  }
 }
 .navigation-items {
   justify-content: flex-end;
-  padding-right: 40px;
-
+  padding-right: 80px;
+  color: $granite-gray;
+  @include desktop-view {
+    margin-right: 20px;
+    width: 250px;
+  }
 
   &__list {
-    
-
-
     &--items {
     }
   }
